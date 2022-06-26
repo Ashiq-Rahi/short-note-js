@@ -173,4 +173,32 @@ function factorial(n){
  let myFibonacciRecursive = fibonacciRecursive(10);
  console.log(myFibonacciRecursive)
 
- 
+//************************************************ End of Sheet Four************************************************************* */
+                                                        /*-----*/
+//************************************************ Sheet Five************************************************************* */
+                                                   /*Array */
+
+let myArray = [45, 67, 68, 90, 56, 34, 54, 45, 67] // an array is a bunch of values stored in a variable
+myArray.push(40);// to push a value to an array. it will add at end of Array
+myArray.pop();// it will remove the last value from the Array
+myArray.unshift(32);// it will add the value in 0 position which means n the first position.
+myArray.shift();// it will remove the first value from the Array
+
+// To know the max value of a Array follow below
+
+let maxValue = 0; //suppose the max value is the value which is on the first position
+for(i = 0; i < myArray.length; i++){ // find the value as as long as the array is
+    let element = myArray[i]; // let find the i'th position of the array
+    if(element > maxValue){ // if the element is greater than current max value which is by default we set 0
+        maxValue = element; // then the new value of the maxValue will be the element
+    }
+}
+console.log(maxValue)// you can see the bigger value
+
+// to sum all the values of an Array follow below
+let sum = 0;
+for(i = 0; i < myArray.length; i++){
+    let element = myArray[i];
+    sum = element + sum;
+}
+console.log(sum)
